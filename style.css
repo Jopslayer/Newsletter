@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Poppins;
+    src: url('/tipografias/Poppins/Poppins-Medium.ttf');
+}
+
+:root{
+    --background_color: #f9fafb;
+    --letter_color2: #394150;
+    --letter_color3: #E5E7EB;
+    --letter-color_p: #6C727F;
+    --colorg1: #284BCE;
+    --propor: 20px;
+}
+
+body{
+    font-family: Poppins;
+    background-color: var(--background_color);
+}
+
+h1,p{
+    margin: 0;
+}
+
+img{
+    width: 52px;
+}
+
+p{
+    color: var(--letter-color_p);
+}
+
+.wrapper{
+    width: clamp(300px, 70%, 600px);
+    margin: auto;
+    font-size: 1rem;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapper p{
+    text-align: center;
+}
+
+.presentation h1{
+    font-size: clamp(1.8em ,4dvw, 2.5em);
+}
+
+.presentation p{
+    font-size: clamp(.8em, 2dvw ,1em);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--propor);
+    box-sizing: border-box; 
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: var(--propor);
+    background-color: #FFFFFF;
+    border-radius: var(--propor);
+    box-shadow: 0 10px var(--propor) 0 #0002;
+}
+.form input{
+    padding: var(--propor);
+    border-radius: calc(var(--propor) * .5);
+    outline: none;
+}
+
+#email{ 
+    background-color: var(--background_color);
+    border: 1.5px solid var(--letter_color3);
+}
+#email::placeholder{
+    text-align: center;
+    color: var(--letter_color2);
+    font-weight: bold;
+}
+
+#buttom_validation{
+    background-color: var(--colorg1);
+    color: var(--background_color);
+    font-weight: bold;
+    border: none;
+}
+
+.form p{
+    font-size: .6em;
+    color: var(--letter-color_p);
+    font-weight: 100;
+}
+
+
+@media screen and (max-width: 600px) {
+    .wrapper{
+        width: 90%;
+    }
+}
