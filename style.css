@@ -48,6 +48,7 @@ p{
 
 .presentation h1{
     font-size: clamp(1.8em ,4dvw, 2.5em);
+    text-aling: center;
 }
 
 .presentation p{
